@@ -1,0 +1,178 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="100%" height="100%">
+  <defs>
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0b1b32" />
+      <stop offset="45%" stop-color="#143257" />
+      <stop offset="80%" stop-color="#234c7a" />
+      <stop offset="100%" stop-color="#41739f" />
+    </linearGradient>
+    <linearGradient id="sunGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffd56b" stop-opacity="0.45" />
+      <stop offset="100%" stop-color="#ffb830" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient id="roofGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#b84328" />
+      <stop offset="100%" stop-color="#7c2411" />
+    </linearGradient>
+    <linearGradient id="wallGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fdfbf7" />
+      <stop offset="100%" stop-color="#e2dad0" />
+    </linearGradient>
+    <linearGradient id="glassGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#64a5d8" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#1d4d7a" stop-opacity="0.9" />
+    </linearGradient>
+    <linearGradient id="lawnGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#28633e" />
+      <stop offset="100%" stop-color="#183f26" />
+    </linearGradient>
+    <linearGradient id="pavingGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ded9d2" />
+      <stop offset="100%" stop-color="#aba197" />
+    </linearGradient>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#051020" flood-opacity="0.5" />
+    </filter>
+  </defs>
+
+  <!-- Sky background -->
+  <rect width="1600" height="900" fill="url(#skyGrad)" />
+  <circle cx="1280" cy="220" r="180" fill="url(#sunGlow)" />
+
+  <!-- Distant Kerala hills & silhouettes -->
+  <path d="M0,560 Q260,490 520,530 T1100,500 T1600,520 L1600,900 L0,900 Z" fill="#132c45" opacity="0.6" />
+  <path d="M0,580 Q320,530 700,560 T1450,540 T1600,570 L1600,900 L0,900 Z" fill="#173a55" opacity="0.8" />
+
+  <!-- Background trees & palms -->
+  <g fill="#1a4634">
+    <!-- Palm trees left -->
+    <path d="M110,620 Q120,440 160,320 Q220,310 250,350 Q180,330 165,370 Q240,360 260,410 Q170,390 155,440 L170,620 Z" opacity="0.85" />
+    <path d="M60,620 Q70,420 110,300 Q170,290 200,330 Q130,310 115,350 Q190,340 210,390 Q120,370 105,420 L120,620 Z" opacity="0.9" />
+    <!-- Palm trees right -->
+    <path d="M1480,620 Q1470,430 1430,310 Q1370,300 1340,340 Q1410,320 1425,360 Q1350,350 1330,400 Q1420,380 1435,430 L1420,620 Z" opacity="0.85" />
+    <path d="M1530,620 Q1520,410 1480,290 Q1420,280 1390,320 Q1460,300 1475,340 Q1400,330 1380,380 Q1470,360 1485,410 L1470,620 Z" opacity="0.9" />
+  </g>
+
+  <!-- Ground Plaza & Lawn -->
+  <rect x="0" y="600" width="1600" height="300" fill="url(#pavingGrad)" />
+  <polygon points="0,600 340,600 240,900 0,900" fill="url(#lawnGrad)" />
+  <polygon points="1260,600 1600,600 1600,900 1360,900" fill="url(#lawnGrad)" />
+
+  <!-- Paved courtyard pattern lines -->
+  <g stroke="#9c9288" stroke-width="1.5" opacity="0.4">
+    <line x1="450" y1="600" x2="330" y2="900" />
+    <line x1="600" y1="600" x2="520" y2="900" />
+    <line x1="750" y1="600" x2="720" y2="900" />
+    <line x1="850" y1="600" x2="880" y2="900" />
+    <line x1="1000" y1="600" x2="1080" y2="900" />
+    <line x1="1150" y1="600" x2="1270" y2="900" />
+    <line x1="280" y1="660" x2="1320" y2="660" />
+    <line x1="240" y1="740" x2="1360" y2="740" />
+    <line x1="200" y1="830" x2="1400" y2="830" />
+  </g>
+
+  <!-- Main FISAT Campus Complex -->
+  <g filter="url(#softShadow)">
+    <!-- Base podium -->
+    <rect x="220" y="580" width="1160" height="25" fill="#c4bcb3" rx="3" />
+    <rect x="240" y="590" width="1120" height="15" fill="#a89f95" rx="2" />
+
+    <!-- Left Wing (Academic Block A) -->
+    <rect x="250" y="380" width="340" height="205" fill="url(#wallGrad)" />
+    <!-- Sloping Terracotta Roof Left -->
+    <polygon points="230,385 420,295 610,385" fill="url(#roofGrad)" />
+    <!-- Windows Left Wing -->
+    <g fill="url(#glassGrad)">
+      <!-- Row 1 -->
+      <rect x="280" y="405" width="42" height="36" rx="2" /><rect x="340" y="405" width="42" height="36" rx="2" />
+      <rect x="400" y="405" width="42" height="36" rx="2" /><rect x="460" y="405" width="42" height="36" rx="2" /><rect x="520" y="405" width="42" height="36" rx="2" />
+      <!-- Row 2 -->
+      <rect x="280" y="460" width="42" height="36" rx="2" /><rect x="340" y="460" width="42" height="36" rx="2" />
+      <rect x="400" y="460" width="42" height="36" rx="2" /><rect x="460" y="460" width="42" height="36" rx="2" /><rect x="520" y="460" width="42" height="36" rx="2" />
+      <!-- Row 3 -->
+      <rect x="280" y="515" width="42" height="42" rx="2" /><rect x="340" y="515" width="42" height="42" rx="2" />
+      <rect x="400" y="515" width="42" height="42" rx="2" /><rect x="460" y="515" width="42" height="42" rx="2" /><rect x="520" y="515" width="42" height="42" rx="2" />
+    </g>
+
+    <!-- Right Wing (Academic Block B) -->
+    <rect x="1010" y="380" width="340" height="205" fill="url(#wallGrad)" />
+    <!-- Sloping Terracotta Roof Right -->
+    <polygon points="990,385 1180,295 1370,385" fill="url(#roofGrad)" />
+    <!-- Windows Right Wing -->
+    <g fill="url(#glassGrad)">
+      <!-- Row 1 -->
+      <rect x="1040" y="405" width="42" height="36" rx="2" /><rect x="1100" y="405" width="42" height="36" rx="2" />
+      <rect x="1160" y="405" width="42" height="36" rx="2" /><rect x="1220" y="405" width="42" height="36" rx="2" /><rect x="1280" y="405" width="42" height="36" rx="2" />
+      <!-- Row 2 -->
+      <rect x="1040" y="460" width="42" height="36" rx="2" /><rect x="1100" y="460" width="42" height="36" rx="2" />
+      <rect x="1160" y="460" width="42" height="36" rx="2" /><rect x="1220" y="460" width="42" height="36" rx="2" /><rect x="1280" y="460" width="42" height="36" rx="2" />
+      <!-- Row 3 -->
+      <rect x="1040" y="515" width="42" height="42" rx="2" /><rect x="1100" y="515" width="42" height="42" rx="2" />
+      <rect x="1160" y="515" width="42" height="42" rx="2" /><rect x="1220" y="515" width="42" height="42" rx="2" /><rect x="1280" y="515" width="42" height="42" rx="2" />
+    </g>
+
+    <!-- Center Grand Administrative Block & Portico -->
+    <rect x="560" y="310" width="480" height="275" fill="url(#wallGrad)" />
+    <!-- Grand Gable Terracotta Roof Center -->
+    <polygon points="530,315 800,205 1070,315" fill="url(#roofGrad)" />
+    <!-- Secondary Gable Tier -->
+    <polygon points="650,265 800,165 950,265" fill="#a0371e" />
+
+    <!-- Center Atrium Glass Facade -->
+    <rect x="660" y="340" width="280" height="150" fill="url(#glassGrad)" rx="4" />
+    <!-- Glass mullions -->
+    <g stroke="#ffffff" stroke-width="2" opacity="0.6">
+      <line x1="730" y1="340" x2="730" y2="490" />
+      <line x1="800" y1="340" x2="800" y2="490" />
+      <line x1="870" y1="340" x2="870" y2="490" />
+      <line x1="660" y1="390" x2="940" y2="390" />
+      <line x1="660" y1="440" x2="940" y2="440" />
+    </g>
+
+    <!-- Classical Grand Pillars (Portico) -->
+    <g fill="#ffffff">
+      <rect x="610" y="360" width="26" height="225" rx="3" />
+      <rect x="680" y="360" width="26" height="225" rx="3" />
+      <rect x="894" y="360" width="26" height="225" rx="3" />
+      <rect x="964" y="360" width="26" height="225" rx="3" />
+      <!-- Entablature bar -->
+      <rect x="580" y="335" width="440" height="25" rx="3" fill="#ffffff" />
+    </g>
+
+    <!-- Main College Entrance Arch & Door -->
+    <path d="M740,585 L740,520 A60,60 0 0,1 860,520 L860,585 Z" fill="#0d243b" />
+    <!-- Steps -->
+    <rect x="710" y="585" width="180" height="8" fill="#d9d1c7" />
+    <rect x="690" y="593" width="220" height="8" fill="#c2b8ad" />
+    <rect x="670" y="601" width="260" height="8" fill="#aba095" />
+
+    <!-- Institutional Sign Board -->
+    <rect x="600" y="300" width="400" height="32" rx="6" fill="#0a1d33" stroke="#d4b762" stroke-width="2" />
+    <text x="800" y="321" fill="#ffffff" font-family="'Manrope', 'Montserrat', Arial, sans-serif" font-size="13" font-weight="800" letter-spacing="3" text-anchor="middle">FEDERAL INSTITUTE OF SCIENCE &amp; TECHNOLOGY</text>
+    <text x="800" y="352" fill="#d4b762" font-family="'Manrope', Arial, sans-serif" font-size="10" font-weight="700" letter-spacing="4" text-anchor="middle">FISAT · HORMIS NAGAR · AUTONOMOUS</text>
+  </g>
+
+  <!-- Landscaped palm shrubs & flowers in front -->
+  <g>
+    <!-- Left flower beds -->
+    <ellipse cx="290" cy="625" rx="90" ry="25" fill="#205c36" />
+    <circle cx="250" cy="615" r="14" fill="#e85d43" opacity="0.8" />
+    <circle cx="280" cy="612" r="12" fill="#f4b236" opacity="0.8" />
+    <circle cx="320" cy="618" r="15" fill="#e85d43" opacity="0.8" />
+    <!-- Right flower beds -->
+    <ellipse cx="1310" cy="625" rx="90" ry="25" fill="#205c36" />
+    <circle cx="1270" cy="618" r="15" fill="#f4b236" opacity="0.8" />
+    <circle cx="1310" cy="612" r="12" fill="#e85d43" opacity="0.8" />
+    <circle cx="1350" cy="616" r="14" fill="#f4b236" opacity="0.8" />
+  </g>
+
+  <!-- Elegant Silver Jubilee Floating Badge Overlay in Bottom-Right -->
+  <g transform="translate(1360, 110)">
+    <circle cx="0" cy="0" r="75" fill="#07192e" stroke="#d4b762" stroke-width="3" opacity="0.95" />
+    <circle cx="0" cy="0" r="66" fill="none" stroke="#ffffff" stroke-width="1" stroke-dasharray="4,4" opacity="0.5" />
+    <text x="0" y="-22" fill="#d4e2ee" font-family="'Manrope', sans-serif" font-size="9" font-weight="800" letter-spacing="3" text-anchor="middle">SILVER</text>
+    <text x="0" y="16" fill="#ffffff" font-family="'Manrope', sans-serif" font-size="44" font-weight="800" text-anchor="middle">25</text>
+    <text x="0" y="35" fill="#d4e2ee" font-family="'Manrope', sans-serif" font-size="9" font-weight="800" letter-spacing="3" text-anchor="middle">JUBILEE</text>
+    <text x="0" y="52" fill="#d4b762" font-family="'Manrope', sans-serif" font-size="8" font-weight="700" letter-spacing="1" text-anchor="middle">2002 — 2027</text>
+  </g>
+</svg>

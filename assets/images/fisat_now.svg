@@ -1,0 +1,151 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="100%" height="100%">
+  <defs>
+    <linearGradient id="skyNow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#19548a" />
+      <stop offset="50%" stop-color="#4189c7" />
+      <stop offset="85%" stop-color="#93c3e8" />
+      <stop offset="100%" stop-color="#d4e8f7" />
+    </linearGradient>
+    <linearGradient id="modernGlass" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#80c6f5" stop-opacity="0.9" />
+      <stop offset="50%" stop-color="#3b82c4" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#144673" stop-opacity="0.95" />
+    </linearGradient>
+    <linearGradient id="facadeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#dce4ec" />
+    </linearGradient>
+    <linearGradient id="terracottaAccent" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#c84c30" />
+      <stop offset="100%" stop-color="#8c2b14" />
+    </linearGradient>
+    <linearGradient id="solarGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0b1b36" />
+      <stop offset="100%" stop-color="#1a3d6e" />
+    </linearGradient>
+    <linearGradient id="plazaGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#e9edf2" />
+      <stop offset="100%" stop-color="#bcc7d4" />
+    </linearGradient>
+    <linearGradient id="lawnNow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2d804b" />
+      <stop offset="100%" stop-color="#1b522e" />
+    </linearGradient>
+    <filter id="crispShadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#08182b" flood-opacity="0.3" />
+    </filter>
+  </defs>
+
+  <!-- Clear Modern Sky -->
+  <rect width="1600" height="900" fill="url(#skyNow)" />
+
+  <!-- Sun Rays & Warmth -->
+  <circle cx="1320" cy="180" r="160" fill="#ffffff" opacity="0.35" />
+  <circle cx="1320" cy="180" r="100" fill="#fff7d6" opacity="0.6" />
+
+  <!-- Distant Tech City & Green Canopy -->
+  <path d="M0,540 Q380,480 820,510 T1600,490 L1600,900 L0,900 Z" fill="#24587c" opacity="0.4" />
+  <path d="M0,570 Q450,520 900,545 T1600,530 L1600,900 L0,900 Z" fill="#1b4d36" opacity="0.75" />
+
+  <!-- Modern Campus Ground & Smart Pathways -->
+  <rect x="0" y="620" width="1600" height="280" fill="url(#plazaGrad)" />
+  <polygon points="0,620 400,620 280,900 0,900" fill="url(#lawnNow)" />
+  <polygon points="1200,620 1600,620 1600,900 1320,900" fill="url(#lawnNow)" />
+
+  <!-- Modern Geometric Pathway Tiles -->
+  <g stroke="#9faebb" stroke-width="2" opacity="0.5">
+    <line x1="480" y1="620" x2="380" y2="900" />
+    <line x1="680" y1="620" x2="620" y2="900" />
+    <line x1="880" y1="620" x2="860" y2="900" />
+    <line x1="1080" y1="620" x2="1140" y2="900" />
+    <line x1="300" y1="690" x2="1300" y2="690" />
+    <line x1="260" y1="780" x2="1340" y2="780" />
+    <line x1="200" y1="880" x2="1400" y2="880" />
+  </g>
+
+  <!-- Modern Smart Campus Architecture (Centerpiece) -->
+  <g filter="url(#crispShadow)">
+    <!-- High-Tech Research & Computing Tower (Center-Right) -->
+    <rect x="780" y="220" width="460" height="410" fill="url(#facadeGrad)" rx="6" />
+    <!-- Modern Glass Curtain Wall (Curved-Look Grid) -->
+    <rect x="810" y="250" width="400" height="340" fill="url(#modernGlass)" rx="4" />
+    <!-- Solar Panels on Roof -->
+    <rect x="800" y="195" width="420" height="25" fill="url(#solarGrad)" rx="3" stroke="#4a8bc2" stroke-width="1.5" />
+    <g stroke="#71a9db" stroke-width="1" opacity="0.7">
+      <line x1="860" y1="195" x2="860" y2="220" /><line x1="920" y1="195" x2="920" y2="220" />
+      <line x1="980" y1="195" x2="980" y2="220" /><line x1="1040" y1="195" x2="1040" y2="220" />
+      <line x1="1100" y1="195" x2="1100" y2="220" /><line x1="1160" y1="195" x2="1160" y2="220" />
+    </g>
+    <!-- Glass Mullion Grid Lines -->
+    <g stroke="#ffffff" stroke-width="2.5" opacity="0.65">
+      <line x1="890" y1="250" x2="890" y2="590" /><line x1="970" y1="250" x2="970" y2="590" />
+      <line x1="1050" y1="250" x2="1050" y2="590" /><line x1="1130" y1="250" x2="1130" y2="590" />
+      <line x1="810" y1="310" x2="1210" y2="310" /><line x1="810" y1="380" x2="1210" y2="380" />
+      <line x1="810" y1="450" x2="1210" y2="450" /><line x1="810" y1="520" x2="1210" y2="520" />
+    </g>
+
+    <!-- Main Heritage + Modern Combined Academic Wing (Center-Left) -->
+    <rect x="260" y="310" width="560" height="320" fill="url(#facadeGrad)" rx="6" />
+    <!-- Kerala Heritage Terracotta Double Roof Accent on Top -->
+    <polygon points="240,315 540,215 840,315" fill="url(#terracottaAccent)" />
+    <!-- White Decorative Cornice -->
+    <rect x="250" y="310" width="580" height="18" fill="#ffffff" rx="2" />
+
+    <!-- Modern Ribbon Windows on Heritage Wing -->
+    <g fill="url(#modernGlass)">
+      <rect x="290" y="355" width="230" height="45" rx="3" />
+      <rect x="550" y="355" width="230" height="45" rx="3" />
+      <rect x="290" y="425" width="230" height="45" rx="3" />
+      <rect x="550" y="425" width="230" height="45" rx="3" />
+      <rect x="290" y="495" width="230" height="45" rx="3" />
+      <rect x="550" y="495" width="230" height="45" rx="3" />
+    </g>
+    <g stroke="#ffffff" stroke-width="1.5" opacity="0.6">
+      <line x1="365" y1="355" x2="365" y2="400" /><line x1="440" y1="355" x2="440" y2="400" />
+      <line x1="625" y1="355" x2="625" y2="400" /><line x1="700" y1="355" x2="700" y2="400" />
+      <line x1="365" y1="425" x2="365" y2="470" /><line x1="440" y1="425" x2="440" y2="470" />
+      <line x1="625" y1="425" x2="625" y2="470" /><line x1="700" y1="425" x2="700" y2="470" />
+    </g>
+
+    <!-- Grand Modern Glass Skybridge Connecting Wings -->
+    <rect x="740" y="390" width="120" height="85" fill="url(#modernGlass)" rx="4" stroke="#ffffff" stroke-width="3" />
+    <line x1="740" y1="432" x2="860" y2="432" stroke="#ffffff" stroke-width="2" />
+    <line x1="800" y1="390" x2="800" y2="475" stroke="#ffffff" stroke-width="2" />
+
+    <!-- Modern Entrance Atrium & Canopies -->
+    <rect x="440" y="550" width="240" height="80" fill="#0b2440" rx="4" />
+    <!-- Glass revolving doors & entryway -->
+    <rect x="470" y="565" width="180" height="65" fill="url(#modernGlass)" rx="3" />
+    <!-- Floating Minimalist Canopy -->
+    <polygon points="410,545 710,545 680,560 440,560" fill="#ffffff" />
+  </g>
+
+  <!-- Modern Collaborative Students / Campus Life (Silhouettes in Foreground) -->
+  <g fill="#183d63" opacity="0.85">
+    <!-- Student group 1 on modern bench -->
+    <rect x="520" y="730" width="160" height="14" rx="4" fill="#697f94" />
+    <circle cx="560" cy="690" r="16" />
+    <path d="M545,710 Q560,705 575,710 L572,745 L548,745 Z" />
+    <!-- Laptop -->
+    <polygon points="568,718 592,718 596,725 570,725" fill="#38a3f5" />
+    <!-- Student 2 listening -->
+    <circle cx="630" cy="688" r="16" />
+    <path d="M615,708 Q630,704 645,708 L642,745 L618,745 Z" />
+
+    <!-- Walking student with backpack -->
+    <circle cx="950" cy="670" r="16" />
+    <path d="M935,690 Q950,686 965,690 L968,750 L932,750 Z" />
+    <!-- Backpack -->
+    <rect x="925" y="694" width="14" height="28" rx="4" fill="#0d243b" />
+  </g>
+
+  <!-- Futuristic "FISAT NOW" Status Badge (Top-Left) -->
+  <g transform="translate(60, 60)">
+    <rect width="480" height="95" rx="14" fill="#071a30" fill-opacity="0.9" stroke="#38a3f5" stroke-width="2" />
+    <circle cx="45" cy="48" r="24" fill="#2d804b" />
+    <text x="45" y="55" fill="#ffffff" font-family="'Manrope', sans-serif" font-size="20" font-weight="800" text-anchor="middle">✓</text>
+    <text x="90" y="38" fill="#d4e8f7" font-family="'Manrope', sans-serif" font-size="12" font-weight="800" letter-spacing="3">CAMPUS LIFE TODAY</text>
+    <text x="90" y="65" fill="#ffffff" font-family="'Manrope', sans-serif" font-size="24" font-weight="800">Autonomous Institution</text>
+    <text x="90" y="82" fill="#d4b762" font-family="'Manrope', sans-serif" font-size="11" font-weight="700" letter-spacing="2">NAAC 'A+' · NBA ACCREDITED · 25 YEARS</text>
+  </g>
+</svg>
